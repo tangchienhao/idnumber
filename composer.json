@@ -1,0 +1,19 @@
+{
+    "name": "chtang/idnumber",
+    "description": "身分證字號檢查",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tang Chien-Hao",
+            "email": "chtang.qu250@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Chtang\\Idnumber\\": "src/"
+        }
+    }
+}
