@@ -8,6 +8,11 @@ use PHPUnit\Framework\TestCase;
 /**
  * 測試
  * 中華民國(ROC TW)身分證號、居留證號
+ *
+ * 於專案目錄下執行phpunit測試：<br>
+ * 單一檔案「vendor/bin/phpunit tests/Unit/TwIdTest.php」<br>
+ * 整個目錄「vendor/bin/phpunit tests」<br>
+ * 整個目錄「vendor/bin/phpunit --testdox tests」
  */
 final class TwIdTest extends TestCase
 {

@@ -1,5 +1,5 @@
 # chtang/idnumber
-身分證字號檢查
+身分證字號、統一編號檢查
 
 # PHP版本限制
 PHP >= 7.2
@@ -17,6 +17,7 @@ composer require chtang/idnumber:dev-main
 # 使用
 ```bash
 use Chtang\Idnumber\TwId;
+use Chtang\Idnumber\TwTaxId;
 
 //驗證本國國民身分證號
 TwId::verifyIdByNative('A123456789'); // true
@@ -33,4 +34,12 @@ TwId::verifyIdByResidentOld('AB17003729'); // false
 //判斷身分證號、居留證號之性別
 TwId::getSex('A123456789'); // M
 TwId::getSex('A223456781'); // F
+
+//驗證統一編號
+TwTaxId::verifyId('04595252'); // true
+TwTaxId::verifyId('04595257'); // true
+TwTaxId::verifyId('10458570'); // true
+TwTaxId::verifyId('10458574'); // true
+TwTaxId::verifyId('10458575'); // true
+TwTaxId::verifyId('10458571'); // false
 ```
