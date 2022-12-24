@@ -12,9 +12,17 @@
     "require": {
         "php": ">=7.2.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
             "Chtang\\Idnumber\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     }
 }
